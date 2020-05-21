@@ -10,6 +10,8 @@ pipenv-setup = "*"
 pillow = "~=7.1"
 transformers = "~=2.2"
 seqeval = "~=0.0.12"
+pandas = "~=1.0"
+torch = "~=1.5"
 
 [requires]
 python_version = "3.6"
