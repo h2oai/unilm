@@ -1,4 +1,7 @@
 # UniLM
+
+This repository includes H2O.ai modifications made to LayoutLM code provided by the original authors of this codebase.
+
 **We develop pre-trained models for natural language understanding (NLU) and generation (NLG) tasks**
 
 The family of UniLM:
