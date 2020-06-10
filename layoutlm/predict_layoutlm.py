@@ -109,7 +109,7 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
     preds = None
     out_label_ids = None
     model.eval()
-    for batch in tqdm(eval_dataloader, desc="Entity recognition"):
+    for batch in eval_dataloader:
         if args.model_type != "layoutlm":
             batch = batch[:4]
         batch = tuple(t.to(args.device) for t in batch)
