@@ -16,7 +16,7 @@ build-h2o-layoutlm: ## Builds h2o-layoutlm module
 	@echo "----- Building h2o-layoutlm module -----"
 	pipenv update --dev && \
 	(pipenv-setup check || true) && \
-		pipenv-setup sync && \
+		pipenv-setup sync -p && \
 		python setup.py bdist_wheel
 
 .PHONY: clean-h2o-layoutlm
